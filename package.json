@@ -1,0 +1,9 @@
+{
+  "name": "dewasatoys-admin-cms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Admin dashboard and persistent catalog API for DewasaToys on Netlify",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}

@@ -1,0 +1,40 @@
+DEWASATOYS - WEBSITE DENGAN DASHBOARD ADMIN
+
+FILE UTAMA
+- index.html: website katalog publik
+- admin.html: halaman login dan dashboard pengelola
+- netlify/functions/admin-api.mjs: API login dan penyimpanan konten
+- netlify.toml: konfigurasi Netlify dan alamat /admin/
+- package.json: dependensi Netlify Blobs
+
+FITUR ADMIN
+- Login dengan password admin (cookie HttpOnly, Secure, SameSite)
+- Tambah, edit, dan hapus produk
+- Kategori, harga, deskripsi, URL foto atau upload foto (maks. 1,5 MB per foto)
+- Edit nama toko, nomor WhatsApp, pengumuman, judul dan deskripsi banner
+- Data disimpan persisten di Netlify Blobs dan dibaca website publik
+
+PENTING: BELUM BISA LANGSUNG AKTIF HANYA DENGAN MENGUNGGAH FILE
+Untuk keamanan, password admin tidak ditulis di dalam file. Deploy folder ini ke Netlify dengan metode Git-connected (direkomendasikan) atau deploy sesuai konfigurasi Netlify Functions. Pastikan Netlify Functions dan Blobs aktif.
+
+LANGKAH SETUP
+1. Ekstrak ZIP ini ke komputer.
+2. Buat repository GitHub baru (Private) dan unggah seluruh isi folder ini ke root repository.
+3. Di Netlify, buka site dewasatoys69 -> Site configuration -> Build & deploy -> Continuous deployment -> Link repository, lalu hubungkan repository tersebut.
+4. Build settings: Publish directory = . ; Functions directory = netlify/functions. Netlify akan membaca netlify.toml. Build command dapat dikosongkan.
+5. Buka Site configuration -> Environment variables, tambahkan:
+   ADMIN_PASSWORD = password admin yang kuat dan unik
+   SESSION_SECRET = string acak rahasia minimal 32 karakter
+   Jangan membagikan kedua nilai ini kepada siapa pun.
+6. Trigger deploy baru setelah environment variables disimpan.
+7. Buka https://dewasatoys69.netlify.app/admin/ dan login menggunakan ADMIN_PASSWORD.
+8. Uji tambah/edit produk, simpan, lalu periksa website publik.
+
+CATATAN PENTING
+- Jika website Netlify saat ini diterbitkan dengan cara drag-and-drop, hubungkan ke repository Git terlebih dahulu agar fungsi server berjalan dan perubahan file berikutnya mudah dideploy.
+- Jangan menaruh password di index.html, admin.html, GitHub, atau pesan publik.
+- Batasi akses repository GitHub hanya untuk akun Anda.
+- Data awal adalah contoh/placeholder dari website asal. Ganti dengan produk, foto, harga, dan deskripsi toko yang benar.
+- Nomor WhatsApp bawaan pada paket ini mengikuti file sumber: 6282164965465.
+- Foto yang diunggah disimpan sebagai data di Netlify Blobs. Untuk katalog besar, gunakan URL foto dari penyimpanan gambar/CDN agar ukuran data tetap efisien.
+- Setelah setup berhasil, /admin/ akan menampilkan login. Sebelum deploy fungsi dan mengisi environment variables, login tidak akan berfungsi.

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DewasaToys | Katalog Produk Dewasa Pria & Wanita</title>
+  <meta name="description" content="Jelajahi katalog DewasaToys. Temukan pilihan produk dewasa pria dan wanita dengan pemesanan mudah melalui WhatsApp dan layanan pelanggan yang privat.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#171717">
+  <link rel="canonical" href="https://dewasatoys69.netlify.app/">
+  <style>
+    :root{--ink:#191919;--muted:#777;--line:#ece9e5;--cream:#f7f5f1;--red:#a84642;--red2:#853531;--white:#fff;--green:#16834b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}button,input{font:inherit}.topbar{background:#171717;color:#eee;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.3px}
+    header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+    .head{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;gap:25px}
+    .brand{font-weight:900;font-size:24px;letter-spacing:-1px;white-space:nowrap}.brand span{color:var(--red)}
+    .search{flex:1;display:flex;border:1px solid #e5e1dc;border-radius:7px;overflow:hidden;background:#faf9f7}
+    .search input{border:0;background:transparent;padding:12px 14px;outline:0;width:100%;font-size:14px}.search button{border:0;background:var(--ink);color:#fff;padding:0 18px;cursor:pointer}
+    .headnote{font-size:12px;color:var(--muted);white-space:nowrap}
+    nav{max-width:1180px;margin:auto;padding:0 22px 13px;display:flex;gap:24px;font-size:13px;color:#555}
+    nav a:hover{color:var(--red)}
+    .hero{background:linear-gradient(112deg,#211f1e 0%,#3b302e 55%,#76504b 100%);color:#fff}
+    .hero-inner{max-width:1180px;margin:auto;padding:54px 22px 58px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:30px}
+    .eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#e2b7ae;font-weight:700}
+    h1{font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-1.8px;margin:13px 0 15px;max-width:620px}
+    .hero p{color:#e4deda;line-height:1.7;font-size:15px;max-width:570px;margin:0 0 25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:6px;background:var(--red);color:#fff;font-weight:700;font-size:13px;border:0;cursor:pointer}
+    .btn:hover{background:var(--red2)}.hero-side{border:1px solid #ffffff35;background:#ffffff0d;border-radius:12px;padding:25px}
+    .hero-side strong{display:block;font-size:17px;margin-bottom:9px}.hero-side p{font-size:13px;margin:0;color:#e3d9d5}
+    main{max-width:1180px;margin:auto;padding:35px 22px 70px}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 37px}
+    .trust div{border:1px solid var(--line);border-radius:8px;padding:15px 16px;font-size:13px;color:#555;background:#fff}
+    .trust b{display:block;color:#222;margin-bottom:4px;font-size:13px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}
+    h2{font-size:25px;letter-spacing:-.7px;margin:0 0 6px}.sub{font-size:13px;color:var(--muted);margin:0}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 22px}
+    .filter{border:1px solid #e8e4df;background:#fff;color:#555;padding:9px 14px;border-radius:30px;font-size:12px;cursor:pointer}
+    .filter.active,.filter:hover{background:#211f1e;color:#fff;border-color:#211f1e}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+    .product{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;transition:.2s}
+    .product:hover{box-shadow:0 8px 24px #241b1710;transform:translateY(-2px)}
+    .photo{height:205px;background:linear-gradient(145deg,#f5f2ee,#e9e4dd);display:flex;align-items:center;justify-content:center;position:relative;color:#a39a90}
+    .photo .placeholder{width:68px;height:68px;border:1px dashed #bdb4aa;border-radius:14px;display:grid;place-items:center;font-size:23px}
+    .tag{position:absolute;top:12px;left:12px;background:#fff;color:#6d514d;padding:6px 9px;border-radius:4px;font-size:10px;font-weight:700}
+    .pbody{padding:14px}.cat{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#9b716b;font-weight:700}
+    .pbody h3{font-size:14px;line-height:1.4;margin:7px 0 8px;min-height:39px}
+    .price{font-size:15px;font-weight:800;margin-bottom:12px}.pbody .btn{width:100%;padding:10px;font-size:12px}
+    .empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted);border:1px dashed var(--line);border-radius:8px}
+    .info{margin-top:48px;background:var(--cream);padding:26px;border-radius:10px;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .info h2{font-size:20px}.info p{font-size:13px;color:#666;line-height:1.7;margin-bottom:0}
+    footer{background:#171717;color:#ddd;padding:32px 22px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px;align-items:center}
+    footer .brand{font-size:20px}footer p{font-size:12px;color:#aaa;line-height:1.6;margin:8px 0 0}.footlinks{font-size:12px;color:#bbb;display:flex;gap:17px;flex-wrap:wrap}
+    .wa-float{position:fixed;right:20px;bottom:20px;background:#16834b;color:#fff;border-radius:30px;padding:13px 18px;font-size:13px;font-weight:700;box-shadow:0 5px 18px #0002;z-index:20}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.headnote{display:none}}
+    @media(max-width:650px){.head{padding:13px 15px;gap:12px;flex-wrap:wrap}.brand{font-size:21px}.search{order:3;flex-basis:100%}nav{padding:0 15px 12px;gap:17px;overflow:auto;white-space:nowrap}.hero-inner{grid-template-columns:1fr;padding:39px 18px}.hero-side{display:none}main{padding:27px 15px 55px}.trust{grid-template-columns:1fr;gap:8px}.section-head{align-items:start;flex-direction:column}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.photo{height:155px}.pbody{padding:11px}.pbody h3{font-size:12px}.price{font-size:13px}.info{grid-template-columns:1fr;padding:20px;gap:15px}.foot{align-items:flex-start;flex-direction:column}.wa-float{right:13px;bottom:13px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Layanan pelanggan privat · Pemesanan mudah melalui WhatsApp</div>
+  <header>
+    <div class="head">
+      <a class="brand" href="#" aria-label="DewasaToys">DEWASA<span>TOYS</span></a>
+      <form class="search" onsubmit="event.preventDefault();searchProducts()">
+        <input id="searchInput" type="search" placeholder="Cari produk atau kategori..." aria-label="Cari produk">
+        <button type="submit">Cari</button>
+      </form>
+      <div class="headnote">Belanja nyaman & privat</div>
+    </div>
+    <nav>
+      <a href="#beranda">Beranda</a><a href="#katalog">Semua Produk</a><a href="#pria">Produk Pria</a><a href="#wanita">Produk Wanita</a><a href="#kontak">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Katalog DewasaToys</div>
+        <h1>Pilihan Produk Dewasa dalam Satu Tempat</h1>
+        <p>Jelajahi katalog produk pria dan wanita dengan pengalaman belanja yang praktis, informatif, dan mengutamakan privasi. Konsultasi serta pemesanan tersedia melalui WhatsApp.</p>
+        <a class="btn" href="#katalog">Jelajahi Katalog</a>
+      </div>
+      <div class="hero-side"><strong>Privasi pelanggan menjadi prioritas</strong><p>Tanyakan ketersediaan produk, detail, dan proses pemesanan langsung kepada admin melalui WhatsApp.</p></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="trust" aria-label="Keunggulan layanan">
+      <div><b>Privasi Terjaga</b>Komunikasi pemesanan langsung dengan admin.</div>
+      <div><b>Informasi Produk</b>Tanyakan detail dan ketersediaan sebelum memesan.</div>
+      <div><b>Pemesanan Praktis</b>Pesan produk melalui WhatsApp.</div>
+    </section>
+
+    <section id="katalog">
+      <div class="section-head">
+        <div><h2>Katalog Produk</h2><p class="sub">Pilih kategori dan temukan produk yang Anda cari.</p></div>
+        <p class="sub" id="resultCount">Menampilkan katalog</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-category="Semua" onclick="setCategory('Semua',this)">Semua Produk</button>
+        <button class="filter" data-category="Pria" onclick="setCategory('Pria',this)" id="pria">Produk Pria</button>
+        <button class="filter" data-category="Wanita" onclick="setCategory('Wanita',this)" id="wanita">Produk Wanita</button>
+        <button class="filter" data-category="Pasangan" onclick="setCategory('Pasangan',this)">Pasangan</button>
+        <button class="filter" data-category="Aksesori" onclick="setCategory('Aksesori',this)">Aksesori</button>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="info" id="kontak">
+      <div><h2>Butuh bantuan memilih produk?</h2><p>Hubungi admin untuk menanyakan katalog, harga, stok, dan informasi pemesanan. Admin akan membantu melalui percakapan WhatsApp secara privat.</p></div>
+      <div><h2>Belanja dengan nyaman</h2><p>Pastikan membaca deskripsi produk dan petunjuk penggunaan dari produsen. Produk hanya ditujukan bagi pelanggan dewasa berusia 18 tahun ke atas.</p><p><a class="btn" style="margin-top:14px" id="contactBtn" href="#">Chat Admin WhatsApp</a></p></div>
+    </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <div><div class="brand">DEWASA<span>TOYS</span></div><p>Katalog produk dewasa pria dan wanita.<br>© <span id="year"></span> DewasaToys. Hak cipta dilindungi.</p></div>
+      <div class="footlinks"><a href="#beranda">Beranda</a><a href="#katalog">Katalog</a><a href="#kontak">Kontak</a></div>
+    </div>
+  </footer>
+  <a class="wa-float" id="floatWa" href="#" aria-label="Chat WhatsApp">WhatsApp Admin</a>
+
+<script>
+/* PANDUAN EDIT:
+   1. Ganti nomor pada WA_NUMBER dengan nomor WhatsApp admin format internasional tanpa tanda +.
+   2. Ubah daftar PRODUCTS di bawah dengan nama, kategori, harga, dan deskripsi produk Anda.
+   3. Ganti PLACEHOLDER_FOTO dengan URL foto produk yang sudah diunggah ke hosting.
+*/
+let WA_NUMBER = "6282164965465";
+let PRODUCTS = [
+  {name:"Produk Pria 01", category:"Pria", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""},
+  {name:"Produk Pria 02", category:"Pria", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""},
+  {name:"Produk Wanita 01", category:"Wanita", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""},
+  {name:"Produk Wanita 02", category:"Wanita", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""},
+  {name:"Produk Pasangan 01", category:"Pasangan", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""},
+  {name:"Aksesori 01", category:"Aksesori", price:"Tanyakan harga", description:"Tanyakan detail, pilihan, dan ketersediaan produk kepada admin.", image:""}
+];
+let activeCategory = "Semua";
+function waLink(message){return "https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(message)}
+function renderProducts(){
+  const q=(document.getElementById("searchInput").value||"").toLowerCase().trim();
+  const filtered=PRODUCTS.filter(p=>(activeCategory==="Semua"||p.category===activeCategory)&&((p.name+" "+p.category+" "+p.description).toLowerCase().includes(q)));
+  document.getElementById("resultCount").textContent=filtered.length+" produk";
+  const grid=document.getElementById("productGrid");
+  if(!filtered.length){grid.innerHTML='<div class="empty">Produk tidak ditemukan. Coba kata kunci lain.</div>';return}
+  grid.innerHTML=filtered.map((p)=>`
+    <article class="product">
+      <div class="photo">${p.image?`<img src="${p.image}" alt="${escapeHtml(p.name)}" style="width:100%;height:100%;object-fit:cover">`:'<div class="placeholder">＋</div>'}<span class="tag">${escapeHtml(p.category)}</span></div>
+      <div class="pbody"><div class="cat">${escapeHtml(p.category)}</div><h3>${escapeHtml(p.name)}</h3><div class="price">${escapeHtml(p.price)}</div>
+      <a class="btn" href="${waLink('Halo admin DewasaToys, saya ingin bertanya tentang '+p.name+'. Mohon informasi detail, harga, dan ketersediaannya.')}" target="_blank" rel="noopener">Pesan via WhatsApp</a></div>
+    </article>`).join("");
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function setCategory(category,button){activeCategory=category;document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));button.classList.add("active");renderProducts()}
+function searchProducts(){renderProducts()}
+function applyStoreSettings(settings){
+  if(!settings)return;
+  if(settings.waNumber) WA_NUMBER=String(settings.waNumber).replace(/\D/g,"");
+  if(settings.announcement) document.querySelector(".topbar").textContent=settings.announcement;
+  if(settings.storeName){document.querySelectorAll(".brand").forEach(el=>{el.innerHTML=escapeHtml(settings.storeName).replace(/(TOYS)/i,'<span>$1</span>')});document.title=settings.storeName+" | Katalog Produk Dewasa";}
+  if(settings.heroTitle) document.querySelector(".hero h1").textContent=settings.heroTitle;
+  if(settings.heroDescription) document.querySelector(".hero .hero-inner > div:first-child p").textContent=settings.heroDescription;
+  if(Array.isArray(settings.products)) PRODUCTS=settings.products;
+}
+async function loadPublishedContent(){
+  try{const r=await fetch("/.netlify/functions/admin-api",{cache:"no-store"});if(r.ok){const result=await r.json();if(result.ok)applyStoreSettings(result.data)}}catch(e){console.warn("Konten dinamis belum tersedia; memakai katalog bawaan.",e)}
+  document.getElementById("contactBtn").href=waLink("Halo admin DewasaToys, saya ingin bertanya mengenai katalog produk.");
+  document.getElementById("floatWa").href=waLink("Halo admin DewasaToys, saya ingin bertanya mengenai produk.");
+  document.getElementById("year").textContent=new Date().getFullYear();
+  renderProducts();
+}
+document.getElementById("searchInput").addEventListener("input",renderProducts);
+loadPublishedContent();
+</script>
+</body>
+</html>
