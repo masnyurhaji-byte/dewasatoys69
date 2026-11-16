@@ -38,3 +38,4 @@ CATATAN PENTING
 - Nomor WhatsApp bawaan pada paket ini mengikuti file sumber: 6282164965465.
 - Foto yang diunggah disimpan sebagai data di Netlify Blobs. Untuk katalog besar, gunakan URL foto dari penyimpanan gambar/CDN agar ukuran data tetap efisien.
 - Setelah setup berhasil, /admin/ akan menampilkan login. Sebelum deploy fungsi dan mengisi environment variables, login tidak akan berfungsi.
+Pembaruan konfigurasi Netlify
